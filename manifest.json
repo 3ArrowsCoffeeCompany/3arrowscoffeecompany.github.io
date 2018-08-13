@@ -3,12 +3,12 @@
   "name": "3 Arrows Coffee Company",
   "icons": [
     {
-      "src": "/3arrows.jpg",
+      "src": "/3arrows.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/3arrows.jpg",
+      "src": "/3arrows.png",
       "type": "image/png",
       "sizes": "512x512"
     }
