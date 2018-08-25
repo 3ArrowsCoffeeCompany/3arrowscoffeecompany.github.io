@@ -83,7 +83,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #183026;
+		background-color: #242943;
 		background-image: url("images/overlay.png"), url("../../images/banner2.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, cover;
@@ -2337,7 +2337,7 @@ input, select, textarea {
 		/* Basic */
 
 			body {
-				background-color: #203936;
+				background-color: #242943;
 				background-image: url("images/overlay.png"), url("../../images/bg-alt.jpg");
 				background-repeat: repeat, no-repeat;
 				background-size: auto, 100% auto;
