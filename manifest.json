@@ -18,4 +18,6 @@
   "display": "standalone",
   "scope": "/",
   "theme_color": "#242943"
+  "gcm_sender_id": "482941778795",
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID"
 }
