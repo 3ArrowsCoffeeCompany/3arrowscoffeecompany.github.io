@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>3 Arrows Coffee App</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="icon" sizes="192x192" href="3arrows.png">
+        <meta name="theme-color" content="#242943">
+        <link rel="apple-touch-icon" href="3arrows.png">
+        <script src="pwabuilder-sw-register.js"></script>
+        
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-startup-image" href="images/splash/launch-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-750x1294.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-1242x2148.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-1536x2048.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-1668x2224.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-2048x2732.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+
+ <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "70bbe85d-6a64-4174-b6b9-264dbc63a423",
+    });
+  });
+</script>
+<script src="OneSignalSDKUpdaterWorker.js"></script>
+<script src="OneSignalSDKWorker.js"></script>
+
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+	background: #242943;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+	width: 75%;
+	max-width: 700px;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+.button {
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: transparent;
+    color: #ffffff;
+    border: 3px solid #ffffff;
+    
+}
+
+.button1:hover {
+     background-color: #ffffff; color: #242943;
+}
+
+.button2 {
+    background-color: #77c159;
+	color: #242943;
+	border: 3px solid #77c159;
+	padding: 0px 0px;
+	
+}
+
+.button2:hover {
+    background-color: transparent; 
+    color: black; 
+    border: 3px solid #ffffff;
+}
+
+.button3 {
+	background-color: #464646;
+	color: #242943;
+	border: 3px solid #464646;
+	padding: 0px 0px;
+}
+
+.button3:hover {
+    background-color: transparent; 
+    color: black; 
+    border: 3px solid #ffffff;
+}
+</style>
+<body>
+
+  <div class="topleft">
+    <p>
+<a href="index.html"><button class="button button1">3 Arrows Coffee Company</button></a></p>
+  </div>
+  <div style="line-height: 0; line-width: 0;" class="middle">
+	<a < href="app-android.html"><button class="button button2" style="width: 50%;"><img style="width: 100%;" src="app/android.png" alt="Android"></button></a><a href="app-ios.html"><button class="button button3" style="width: 50%;"><img style="width: 100%;" src="app/ios.png" alt="iOS"></button></a>
+	<img width="100%" height="auto" src="app/qr.png" alt="QR">
+  </div>
+  <div class="bottomleft">
+    <p></p>
+  </div>
+
+</body>
+</html>
