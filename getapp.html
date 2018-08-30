@@ -20,7 +20,7 @@
   <link rel="apple-touch-startup-image" href="images/splash/launch-2048x2732.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
   <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
 
- <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
   var OneSignal = window.OneSignal || [];
   OneSignal.push(function() {
@@ -29,14 +29,20 @@
     });
   });
 </script>
-<script src="OneSignalSDKUpdaterWorker.js"></script>
-<script src="OneSignalSDKWorker.js"></script>
 
 <style>
 body, html {
     height: 100%;
     margin: 0;
 	background: #242943;
+}
+    
+.bgimg {
+    background-image: url('app/mainback.png');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 
 .topleft {
@@ -118,19 +124,22 @@ hr {
     border: 3px solid #ffffff;
 }
 </style>
+    
 <body>
 
-  <div class="topleft">
+<div class="bgimg">
+<div class="topleft">
     <p>
 <a href="index.html"><button class="button button1">3 Arrows Coffee Company</button></a></p>
   </div>
   <div style="line-height: 0; line-width: 0;" class="middle">
-	<a < href="app-android.html"><button class="button button2" style="width: 50%;"><img style="width: 100%;" src="app/android.png" alt="Android"></button></a><a href="app-ios.html"><button class="button button3" style="width: 50%;"><img style="width: 100%;" src="app/ios.png" alt="iOS"></button></a>
+	<a href="app-android.html"><button class="button button2" style="width: 50%;"><img style="width: 100%;" src="app/android.png" alt="Android"></button></a><a href="app-ios.html"><button class="button button3" style="width: 50%;"><img style="width: 100%;" src="app/ios.png" alt="iOS"></button></a>
 	<img width="100%" height="auto" src="app/qr.png" alt="QR">
   </div>
   <div class="bottomleft">
     <p></p>
   </div>
+</div>
 
 </body>
 </html>
