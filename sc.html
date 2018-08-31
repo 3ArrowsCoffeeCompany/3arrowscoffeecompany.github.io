@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<title>3 Arrows Coffee Android App</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="icon" sizes="192x192" href="3arrows.png">
+        <meta name="theme-color" content="#242943">
+        <link rel="apple-touch-icon" href="3arrows.png">
+        <script src="pwabuilder-sw-register.js"></script>
+        
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="apple-touch-startup-image" href="images/splash/launch-640x1136.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-750x1294.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-1242x2148.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-1125x2436.png" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-1536x2048.png" media="(min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-1668x2224.png" media="(min-device-width: 834px) and (max-device-width: 834px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-startup-image" href="images/splash/launch-2048x2732.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
+
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  var OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "70bbe85d-6a64-4174-b6b9-264dbc63a423",
+    });
+  });
+</script>
+
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+	background: #242943;
+	color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.bgimg {
+    background-image: url('app/mainback.png');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+	width: 75%;
+	height: 75%;
+	max-width: 350px;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+</style>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+<body>
+
+<div class="bgimg">
+  <div class="topleft">
+    <p>
+  </div>
+  <div class="middle">
+    <p align="right"><a onclick="goBack()"><b>X</b></a></p> 
+	<img width="100%" height="auto" src="images/sc-qr.jpg" alt="Italian Trulli">
+  </div>
+  <div class="bottomleft">
+    <p></p>
+  </div>
+</div>
+
+</body>
+</html>

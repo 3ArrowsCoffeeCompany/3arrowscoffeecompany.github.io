@@ -2731,7 +2731,7 @@ input, select, textarea {
 			min-height: 23em;
 			overflow: hidden;
 			position: relative;
-			width: 60%;
+			width: 100%;
 		}
 
 			.tiles article .image {
@@ -2818,19 +2818,19 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
+				background-color: #3c5a99;
 			}
 
 			.tiles article:nth-child(6n - 2):before {
-				background-color: #8d82c4;
+				background-color: #000000;
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+				background-color: #a5a500;
 			}
 
 			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4;
+				background-color: #1da1f2;
 			}
 
 		@media screen and (max-width: 1280px) {
@@ -2847,7 +2847,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			.tiles article {
-				width: 50% !important;
+				width: 100% !important; /* changed from 50% */
 			}
 
 		}

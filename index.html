@@ -56,7 +56,7 @@
 					<nav id="menu">
 						<ul class="links">
 							<li><a class="button fit" href="shop.html">The Shop</a></li>
-							<li><a class="button fit" href="shack.html">The Shack</a></li>
+							<li><a style="display: none;" class="button fit" href="shack.html">The Shack</a></li>
 							<li><a class="button primary fit" href="getapp.html">Get Our App</a></li>
 						</ul>
 					</nav>
@@ -90,7 +90,8 @@
 										<p><b>Hours:</b><br>Mon-Sat: 6AM-6PM<br>Sunday: 8am-3pm</p>
 									</header>
 								</article>
-								<article>
+                                
+								<article style="display: none;">
 									<span class="image">
 										<img src="images/shack.jpg" alt="" />
 									</span>
@@ -99,7 +100,134 @@
                                         <p><b>Hours:</b><br>Mon-Fri: 5AM-1pm<br></p>
 									</header>
 								</article>
+                            
 							</section>
+                        
+                        <style>
+            .tiles2 article {
+			height: auto;
+			max-height: 15em;
+			min-height: 15em;
+			width: 25%;
+		}
+            .tiles2 article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
+				width: 25%;
+			}
+
+			.tiles2 article:nth-child(6n - 5):before {
+				background-color: #3c5a99;
+			}
+
+			.tiles2 article:nth-child(6n - 4):before {
+				background-color: #000000;
+			}
+
+			.tiles2 article:nth-child(6n - 3):before {
+				background-color: #a5a500;
+			}
+
+			.tiles2 article:nth-child(6n - 2):before {
+				background-color: #1da1f2;
+			}
+
+			.tiles2 article:nth-child(6n - 1):before {
+				background-color: #a5a500;
+			}
+
+			.tiles2 article:nth-child(6n):before {
+				background-color: #1da1f2;
+			}
+                            
+        @media screen and (max-width: 1280px) {
+
+			.tiles2 article {
+				padding: 4em 3em 2em 3em ;
+				height: 30vh;
+				max-height: 30em;
+				min-height: 20em;
+			}
+
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.tiles2 article {
+				width: 25% !important;
+                height: auto;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.tiles2 article {
+				padding: 3em 1.5em 1em 1.5em ;
+				height: 16em;
+				max-height: none;
+				min-height: 0;
+			}
+
+				.tiles article h3 {
+					font-size: 1.5em;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.tiles2 {
+				display: block;
+			}
+
+				.tiles2 article {
+					height: auto;
+					width: 100% !important;
+				}
+
+		}
+
+                        </style>
+                            <section class="tiles tiles2">
+                              <article>
+									<span class="image">
+										<img src="images/fb.png" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="http://fb.me/3arrowscoffee" class="link">Facebook</a></h3>
+                                        <p>fb.me/3arrowscoffee</p>
+									</header>
+								</article>
+                                
+                                <article>
+									<span class="image">
+										<img src="images/insta.png" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="https://www.instagram.com/3arrowscoffeecompany/" class="link">Instagram</a></h3>
+                                        <p>@3arrowscoffeecompany</p>
+									</header>
+								</article>
+                                
+                                <article>
+									<span class="image">
+										<img src="images/sc.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="sc.html" class="link">Snapchat</a></h3>
+                                        <p>the3arrowscoffe</p>
+									</header>
+								</article>
+                                
+                                <article>
+									<span class="image">
+										<img src="images/twitter.png" alt="" />
+									</span>
+									<header class="major">
+										<h3><a href="https://twitter.com/ArrowsCoffee" class="link">Twitter</a></h3>
+                                        <p>@ArrowsCoffee</p>
+									</header>
+								</article>
+                            </section>
 
 						<!-- Two -->
 							<section style="display:none" id="two">
