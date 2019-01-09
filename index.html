@@ -19,12 +19,17 @@ Our goal is to bring something different to the area and to support and love oth
 		
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		
+        <link rel="stylesheet" href="assets/css/main.css" />
+        
+        <link rel="stylesheet" href="assets/ourmenu/ourmenu.css" />
+        <link rel="stylesheet" href="assets/sc/ourmenu.css" />
+        
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link rel="manifest" href="/manifest.json">
         <link rel="icon" sizes="192x192" href="3arrows.png">
-        <meta name="theme-color" content="#242943">
+        <meta name="theme-color" content="#303030">
         <link rel="apple-touch-icon" href="3arrows.png">
         <script src="pwabuilder-sw-register.js"></script>
         
@@ -38,7 +43,7 @@ Our goal is to bring something different to the area and to support and love oth
   <link rel="apple-touch-startup-image" href="images/splash/launch-2048x2732.png" media="(min-device-width: 1024px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait)">
   <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
         
-<meta http-equiv="refresh" content="0; URL=/maintenance.html">
+
 		
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
 <script>
@@ -50,6 +55,7 @@ Our goal is to bring something different to the area and to support and love oth
   });
 </script>
         
+        
 	</head>
 	<body class="is-preload">
 
@@ -58,18 +64,40 @@ Our goal is to bring something different to the area and to support and love oth
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>3 Arrows Coffee Company</strong> <span>Website</span></a>
+						<a href="index.html" class="logo"><strong>3 Arrows Coffee</strong> <span>Website</span></a>
 						<nav>
-							<a href="#menu"></a>
+							<a href="#menu">Quick Links</a>
 						</nav>
 					</header>
 
 				<!-- Menu -->
 					<nav id="menu">
 						<ul class="links">
-							<li><a class="button fit" href="shop.html">The Shop</a></li>
-							<li><a class="button fit" href="shop.html#menu">Our Menu</a></li>
-							<li><a class="button primary fit" href="getapp.html">Get Our App</a></li>
+							<li><a class="button primary fit" href="shop.html">The Shop</a></li>
+							<li><a class="button fit" href="tel:+1-715-553-3110">Call Us</a></li>
+							<li><a class="button large icon fa-mobile" href="getapp.html">Get Our App</a></li>
+						</ul>
+					</nav>
+                
+                <!-- Our Menu -->
+					<nav id="ourmenu">
+						<ul class="links">
+							<img height="auto" width="100%" src="shop/images/menu.jpeg" style="user-drag: none; user-select: none; -moz-user-select: none; -webkit-user-drag: none; -webkit-user-select: none; -ms-user-select: none; pointer-events: none;">
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="tel:+1-715-553-3110" class="button primary fit">Call Us</a></li>
+						</ul>
+					</nav>
+                
+                <!-- SC Menu -->
+					<nav id="scmenu">
+                        <ul class="links">
+							<img height="auto" width="100%" src="images/sc-qr.jpg">
+						</ul>
+						<ul class="links">
+                            <h3>↓ Links for Mobile Devices ↓</h3>
+                            <li><a href="https://www.snapchat.com/add/the3arrowscoffe" class="button primary fit">Add us on Snapchat!</a></li>
+							<li><a href="https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=77e38ff01bdd40c9949b10106a8adeef&metadata=01" class="button fit">Get our Snapchat Filter</a></li>
 						</ul>
 					</nav>
 
@@ -95,27 +123,85 @@ Our goal is to bring something different to the area and to support and love oth
 							<section id="one" class="tiles">
 								<article>
 									<span class="image">
-										<img src="images/shop2.jpg" alt="" />
+										<img src="images/shop3.jpg" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="shop.html" class="link">The Shop</a></h3>
-										<p><b>Hours:</b><br>Mon-Sat: 6AM-6PM<br>Sunday: 8am-3pm</p>
+										<p><b>Hours:</b><br> Mon-Fri: 6AM-6PM<br> Saturday: 8am-6pm<br> Sunday: 8am-3pm</p>
 									</header>
 								</article>
                                 
 								<article style="width: 37%;">
 									<span class="image">
-										<img src="images/menu.png" alt="" />
+										<img src="images/menu.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="shop.html#menu" class="link">Our Menu</a></h3>
+										<h3><a href="#ourmenu">Our Menu</a></h3>
                                         <p style="display: none;"><b>Hours:</b><br>Mon-Fri: 5AM-1pm<br></p>
 									</header>
 								</article>
                             
 							</section>
                         
-                        <style>
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+                                <h2>Contact Us</h2>
+								<form method="post" action="https://formspree.io/3arrowscoffeecompany@gmail.com">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+                                    <input type="hidden" name="_next" value="https://www.3arrowscoffeecompany.com/thx.html" />
+								</form>
+							</section>
+							<section class="split">
+								<section style="display:none">
+									<div hidden class="contact-method">
+										<span class="icon alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">information@untitled.tld</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-phone"></span>
+										<h3>Main Phone</h3>
+                                        <span><a href="tel:+1-715-553-3110">(715) 553-3110</a></span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon alt fa-home"></span>
+										<h3>Main Address</h3>
+										<span>510 S Vincent St<br />
+										St Croix Falls, WI 54024<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+                
+                <style>
             .tiles2 article {
 			height: auto;
 			max-height: 15em;
@@ -202,7 +288,7 @@ Our goal is to bring something different to the area and to support and love oth
                             <section class="tiles tiles2">
                               <article>
 									<span class="image">
-										<img src="images/fb.png" alt="" />
+										<img src="images/social/fb2.png" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="http://fb.me/3arrowscoffee" class="link">Facebook</a></h3>
@@ -212,7 +298,7 @@ Our goal is to bring something different to the area and to support and love oth
                                 
                                 <article>
 									<span class="image">
-										<img src="images/insta.png" alt="" />
+										<img src="images/social/insta2.png" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="https://www.instagram.com/3arrowscoffeecompany/" class="link">Instagram</a></h3>
@@ -222,17 +308,17 @@ Our goal is to bring something different to the area and to support and love oth
                                 
                                 <article>
 									<span class="image">
-										<img src="images/sc.jpg" alt="" />
+										<img src="images/social/sc2.png" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="sc.html" class="link">Snapchat</a></h3>
+										<h3><a href="#scmenu">Snapchat</a></h3>
                                         <p>the3arrowscoffe</p>
 									</header>
 								</article>
                                 
                                 <article>
 									<span class="image">
-										<img src="images/twitter.png" alt="" />
+										<img src="images/social/twitter2.png" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="https://twitter.com/ArrowsCoffee" class="link">Twitter</a></h3>
@@ -254,69 +340,13 @@ Our goal is to bring something different to the area and to support and love oth
 								</div>
 							</section>
 
-					</div>
-
-				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							<section>
-								<form method="post" action="https://formspree.io/3arrowscoffeecompany@gmail.com">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
-									</ul>
-                                    <input type="hidden" name="_next" value="https://www.3arrowscoffeecompany.com/thx.html" />
-								</form>
-							</section>
-							<section class="split">
-								<section>
-									<div hidden class="contact-method">
-										<span class="icon alt fa-envelope"></span>
-										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon alt fa-phone"></span>
-										<h3>Main Phone</h3>
-                                        <span><a href="tel:+1-715-553-3110">(715) 553-3110</a></span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon alt fa-home"></span>
-										<h3>Main Address</h3>
-										<span>510 S Vincent St<br />
-										St Croix Falls, WI 54024<br />
-										United States of America</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
-
 				<!-- Footer -->
 					<footer id="footer">
 						<div class="inner">
-							<ul class="icons">
+							<ul style="display:none" class="icons">
 								<li style="display:none"><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="http://fb.me/3arrowscoffee" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/3arrowscoffeecompany/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li style="display:none"><a href="http://fb.me/3arrowscoffee" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li style="display:none"><a href="https://www.instagram.com/3arrowscoffeecompany/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
 								<li style="display:none"><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
 								<li style="display:none"><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
 							</ul>
@@ -336,6 +366,9 @@ Our goal is to bring something different to the area and to support and love oth
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+        
+            <script src="assets/ourmenu/main.js"></script>
+            <script src="assets/sc/main.js"></script>
 
 	</body>
 </html>
