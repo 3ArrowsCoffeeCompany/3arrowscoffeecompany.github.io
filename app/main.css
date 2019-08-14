@@ -29,9 +29,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
-body {
+/* body {
 	line-height: 1;
-}
+} */
 
 body, html {
     height: 100%;
@@ -65,9 +65,9 @@ table {
 	border-spacing: 0;
 }
 
-body {
+/* body {
 	-webkit-text-size-adjust: none;
-}
+} */
 
 mark {
 	background-color: transparent;
@@ -208,9 +208,9 @@ hr {
 		width: device-width;
 	}
 
-	body {
+	/* body {
 		-ms-overflow-style: scrollbar;
-	}
+	} */
 
 	@media screen and (max-width: 480px) {
 
