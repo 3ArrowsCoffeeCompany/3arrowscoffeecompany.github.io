@@ -1,8 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+
 <html>
-<title>3 Arrows Coffee App</title>
+<head>
+    <title>3 Arrows Coffee App</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+        <link rel="stylesheet" href="app/main.css" /> 
+        <link rel="stylesheet" href="assets/android/ourmenu.css" />
+        <link rel="stylesheet" href="assets/ios/ourmenu.css" />
+    
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link rel="manifest" href="/manifest.json">
         <link rel="icon" sizes="192x192" href="3arrows.png">
@@ -29,117 +37,91 @@
     });
   });
 </script>
-
+    
 <style>
-body, html {
-    height: 100%;
-    margin: 0;
-	background: #242943;
+@media only screen and (max-width: 600px) {
+.hide-on-mobile-only {
+display: none !important;
 }
-    
-.bgimg {
-    background-image: url('app/back.jpg');
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    position: relative;
 }
-
-.topleft {
-    position: absolute;
-    top: 0;
-    left: 16px;
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+.hide-on-tablet-only {
+display: none !important;
+}
+}
+@media only screen and (max-width: 992px) {
+.hide-on-mobile-and-tablet {
+display: none !important;
+}
 }
 
-.bottomleft {
-    position: absolute;
-    bottom: 0;
-    left: 16px;
+@media only screen and (min-width: 601px) {
+.hide-on-tablet-and-desktop {
+display: none !important;
 }
+}
+@media only screen and (min-width: 993px) {
+.hide-on-desktop-only {
+display: none !important;
+}
+}
+}</style>
 
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-	width: 75%;
-	max-width: 700px;
-}
-
-hr {
-    margin: auto;
-    width: 40%;
-}
-
-.button {
-    background-color: transparent;
-    border: 3px solid #ffffff;
-    color: white;
-    padding: 7px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.button1 {
-    background-color: transparent;
-    color: #ffffff;
-    border: 3px solid #ffffff;
-    
-}
-
-.button1:hover {
-     background-color: #ffffff; color: #242943;
-}
-
-.button2 {
-    background-color: #77c159;
-	color: #242943;
-	border: 3px solid #77c159;
-	padding: 0px 0px;
-	
-}
-
-.button2:hover {
-    background-color: transparent; 
-    color: black; 
-    border: 3px solid #ffffff;
-}
-
-.button3 {
-	background-color: #464646;
-	color: #242943;
-	border: 3px solid #464646;
-	padding: 0px 0px;
-}
-
-.button3:hover {
-    background-color: transparent; 
-    color: black; 
-    border: 3px solid #ffffff;
-}
-</style>
+</head>
     
 <body>
+    
+                <!-- Our Menu -->
+					<nav id="android">
+						<ul class="links">
+							<img height="auto" width="100%" src="app/androidinstall.png" style="user-drag: none; user-select: none; -moz-user-select: none; -webkit-user-drag: none; -webkit-user-select: none; -ms-user-select: none; pointer-events: none;">
+						</ul>
+					</nav>
+                
+                <!-- SC Menu -->
+					<nav id="ios">
+                        <ul class="links">
+							<img height="auto" width="100%" src="app/iosinstall.png">
+						</ul>
+					</nav>
 
-<div class="bgimg">
 <div class="topleft">
     <p>
-<a href="./"><button class="button button1">3 Arrows Coffee Company</button></a></p>
+        <a href="./"><button class="button button1"><b>← 3 Arrows Coffee Home Page</b></button></a></p>
   </div>
-  <div style="line-height: 0; line-width: 0;" class="middle">
-	<a href="app-android.html"><button class="button button2" style="width: 50%;"><img style="width: 100%;" src="app/android.png" alt="Android"></button></a><a href="app-ios.html"><button class="button button3" style="width: 50%;"><img style="width: 100%;" src="app/ios.png" alt="iOS"></button></a>
-	<img width="100%" height="auto" src="app/qr.png" alt="QR">
+  
+  <div style="line-height: 0; line-width: 0;" class="middle hide-on-desktop-only hide-on-tablet-only">
+	<a href="#android"><button class="button button2" style="width: 50%;"><img style="width: 100%;" src="app/android.png" alt="Android"></button></a>
+    <p style="padding-top: 25px;"></p>
+    <a href="#ios"><button class="button button3" style="width: 50%;"><img style="width: 100%;" src="app/ios.png" alt="iOS"></button></a>
   </div>
+    
+  <div style="line-height: 0; line-width: 0;" class="middle hide-on-desktop-only hide-on-mobile-only">
+	<a href="#android"><button class="button button2" style="width: 50%;"><img style="width: 100%;" src="app/android.png" alt="Android"></button></a><a href="#ios"><button class="button button3" style="width: 50%;"><img style="width: 100%;" src="app/ios.png" alt="iOS"></button></a>
+  </div>
+    
+  <div class="middle hide-on-mobile-and-tablet">
+	<a href="#android"><button class="button button2" style="width: 50%;"><img style="width: 100%;" src="app/android.png" alt="Android"></button></a><a href="#ios"><button class="button button3" style="width: 50%;"><img style="width: 100%;" src="app/ios.png" alt="iOS"></button></a>
+	<img width="100%" height="auto" src="app/qr.png" alt="QR" class="visible-lg">
+  </div>
+  
   <div class="bottomleft">
-    <p></p>
   </div>
-</div>
-
+    
+    <!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+    
+            <script src="assets/android/main.js"></script>
+            <script src="assets/ios/main.js"></script>
+    
+<!-- https://webdesign.tutsplus.com/tutorials/how-to-create-a-frosted-glass-effect-in-css--cms-32535 
+https://iheartpagelines.com/news/tip-week-hide-content-device/
+-->
 </body>
 </html>
