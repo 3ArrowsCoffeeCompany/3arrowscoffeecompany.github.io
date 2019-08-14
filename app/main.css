@@ -228,9 +228,7 @@ hr {
 		box-sizing: inherit;
 	}
 
-	body {
-		/* background: #303030; */
-	}
+	/* body background: #303030; */
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
